@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Add Employee</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="container">
+	<h1>Add Employee</h1>
+		<form action="submit" method="POST">
+		<div><label>First Name:</label><input type="text" name="fname" value="John"></div>
+		<div><label>Last Name:</label><input type="text" name="lname" value="Wayne"></div>
+		<div id="title"><label>Title:</label><input type="text" name="title" value="Sales Representatve"></div>
+		<div id="radio">
+			<label>Title of Courtesy:</label>
+				<input type="radio" name="courtesy" value="Dr.">Dr.
+				<input type="radio" name="courtesy" value="Mr." checked>Mr.
+				<input type="radio" name="courtesy" value="Mrs.">Mrs.
+				<input type="radio" name="courtesy" value="Ms.">Ms.
+		</div>
+		<div id="date">
+			<label>Birth date:</label>
+			<select name="month" id="mоnth">
+				<option value="january">January</option>
+				<option value="february">February</option>
+				<option value="march">March</option>
+				<option value="april">April</option>
+				<option value="may">May</option>
+				<option value="june">June</option>
+				<option value="july">July</option>
+				<option value="august">August</option>
+				<option value="september">September</option>
+				<option value="october">October</option>
+				<option value="november">November</option>
+				<option value="december">December</option>
+			</select>
+			<select name="day" id="day"> 
+			    <option>1</option>       
+			    <option>2</option>       
+			    <option>3</option>       
+			    <option>4</option>       
+			    <option>5</option>       
+			    <option>6</option>       
+			    <option>7</option>       
+			    <option>8</option>       
+			    <option>9</option>       
+			    <option>10</option>       
+			    <option>11</option>       
+			    <option>12</option>       
+			    <option>13</option>       
+			    <option>14</option>       
+			    <option>15</option>       
+			    <option>16</option>       
+			    <option>17</option>       
+			    <option>18</option>       
+			    <option>19</option>       
+			    <option>20</option>       
+			    <option>21</option>       
+			    <option>22</option>       
+			    <option>23</option>       
+			    <option>24</option>       
+			    <option>25</option>       
+			    <option>26</option>       
+			    <option>27</option>       
+			    <option>28</option>       
+			    <option>29</option>       
+			    <option>30</option>       
+			    <option>31</option>       
+			</select>
+			<select id="year" name="year">
+			<script>
+			  var myDate = new Date();
+			  var year = myDate.getFullYear();
+			  for(var i = 1900; i < year+1; i++){
+				  document.write('<option value="'+i+'">'+i+'</option>');
+			  }
+			</script>
+		</select>
+		</div>
+		<div id="date">
+			<label>Hire date:</label>
+			<select name="month" id="mоnth">
+				<option value="january">January</option>
+				<option value="february">February</option>
+				<option value="march">March</option>
+				<option value="april">April</option>
+				<option value="may">May</option>
+				<option value="june">June</option>
+				<option value="july">July</option>
+				<option value="august">August</option>
+				<option value="september">September</option>
+				<option value="october">October</option>
+				<option value="november">November</option>
+				<option value="december">December</option>
+			</select>
+			<select name="day" id="day"> 
+			    <option>1</option>       
+			    <option>2</option>       
+			    <option>3</option>       
+			    <option>4</option>       
+			    <option>5</option>       
+			    <option>6</option>       
+			    <option>7</option>       
+			    <option>8</option>       
+			    <option>9</option>       
+			    <option>10</option>       
+			    <option>11</option>       
+			    <option>12</option>       
+			    <option>13</option>       
+			    <option>14</option>       
+			    <option>15</option>       
+			    <option>16</option>       
+			    <option>17</option>       
+			    <option>18</option>       
+			    <option>19</option>       
+			    <option>20</option>       
+			    <option>21</option>       
+			    <option>22</option>       
+			    <option>23</option>       
+			    <option>24</option>       
+			    <option>25</option>       
+			    <option>26</option>       
+			    <option>27</option>       
+			    <option>28</option>       
+			    <option>29</option>       
+			    <option>30</option>       
+			    <option>31</option>       
+			</select>
+			<select id="year" name="year">
+			<script>
+			  var myDate = new Date();
+			  var year = myDate.getFullYear();
+			  for(var i = 1900; i < year+1; i++){
+				  document.write('<option value="'+i+'">'+i+'</option>');
+			  }
+			</script>
+		</select>
+		<div id="address"><label>Address:</label><input type="text" name="adress" value="1 Cowboy Lane"></div>
+		<div id="city"><label>City:</label><input type="text" name="city" value="Winterset"></div>
+		<div id="region"><label>Address:</label><input type="text" name="region" value="IA"></div>
+		<div id="pcode"><label>Postal Code:</label><input type="text" name="pcode" value="50273"></div>
+		<div id="country"><label>Country:</label><input type="text" name="country" value="USA"></div>
+		<div id="phone"><label>Home Phone:</label><input type="text" name="phone" value="515-555-1212"></div>
+		<div id="ext"><label>Extension:</label><input type="text" name="ext" value="1212"></div>
+		<div id="notes">Notes:<input type="text" name="notes" value="Before joining Northwind, John dabbled in acting in Western movies"></div>
+		<div id="manager">
+			<label>Manager:</label>
+				<select name="manager" id="manager">
+					<option>Andrew Fuller</option>
+				</select>
+		</div>
+		<div id="password"><label>Password:</label><input type="password" name="password" value="********"></div>
+		<div id="password"><label>Repeat Password:</label><input type="password" name="password" value="********"></div>
+		</div>
+		<button type="submit">Add Employee</button>
+		</form>		
+	</div>
+</body>
+</html>
